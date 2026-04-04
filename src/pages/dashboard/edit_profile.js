@@ -143,7 +143,7 @@ export default function EditProfile() {
   return (
     <div className="min-h-screen bg-[#F6FAF8] py-8 px-4 sm:px-6 lg:px-8">
       <Link
-        to="/dashboard/doctor"
+        to="/dashboard/patient"
         className="flex items-center text-[#21748C] hover:text-[#1D6278] transition-colors mb-4"
       >
         <ArrowLeft size={20} className="mr-1" />
