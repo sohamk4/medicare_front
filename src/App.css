@@ -1,0 +1,23 @@
+/* Import Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Custom global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff; /* Default background */
+  color: #333333; /* Default text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ Utility overrides for your healthcare theme */
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
