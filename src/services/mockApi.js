@@ -168,7 +168,6 @@ export const isBackendAvailable = async () => {
   try {
     const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/health`, {
       method: "GET",
-      signal: AbortSignal.timeout(2000), // 2-second timeout
     });
     return response.ok;
   } catch (error) {
