@@ -13,8 +13,6 @@ class ApiService {
   async handleRequest(endpoint, method, body, mockFunction) {
     if (!this.useMock) {
       try {
-        const backendUp = await isBackendAvailable();
-        if (!backendUp) throw new Error("Backend unavailable");
 
         const response = await axios({
           method,
